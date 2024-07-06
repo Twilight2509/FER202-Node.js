@@ -1,0 +1,15 @@
+{
+  "events": [
+    { "id": 1, "name": "Conference", "date": "2024-07-20" },
+    { "id": 2, "name": "Workshop", "date": "2024-08-15" },
+    { "id": 3, "name": "Seminar", "date": "2024-09-10" }
+  ],
+  "attendees": [
+    { "id": 1, "name": "John Doe", "email": "john@example.com", "eventId": 1 },
+    { "id": 2, "name": "Jane Smith", "email": "jane@example.com", "eventId": 1 },
+    { "id": 3, "name": "Emily Johnson", "email": "emily@example.com", "eventId": 2 },
+    { "id": 4, "name": "Michael Brown", "email": "michael@example.com", "eventId": 2 },
+    { "id": 5, "name": "Jessica White", "email": "jessica@example.com", "eventId": 3 },
+    { "id": 6, "name": "Daniel Green", "email": "daniel@example.com", "eventId": 3 }
+  ]
+}
