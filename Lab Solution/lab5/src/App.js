@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
+import EmployeeProvider from './context/EmployeeContext';
+import DepartmentList from './components/DepartmentList';
+import EmployeeList from './components/EmployeeList';
+import AddEmployeeForm from './components/AddEmployeeForm';
+import Search from './components/Search';
+import AppNavbar from './components/Navbar';
+import HomePage from './pages/HomePage';
+import EmployeeDetail from './components/EmployeeDetail';
+import EditEmployeeForm from './components/EditEmployeeForm';
+import DepartmentList_Radio from './others/DepartmentList_Radio';
+import Navbar_Button from './others/Navbar_Button';
+import AddEmployeeToTeam from './components/AddEmployeeToTeam';
+import DisplayTeam from './components/DisplayTeam';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <EmployeeProvider>
+      <Router>
+        <AppNavbar />
+        <Container className="mt-4">
+          <Routes>
+            <Route path="/" element=
+              {
+                <Row>
+                  <Col md={4}>
+                    <h2>Departments</h2>
+                    <DepartmentList />
+                  </Col>
+                  <Col md={8}>
+                    <h2>Employees</h2>
+                    <Search />
+                    <EmployeeList />
+                  </Col>
+                </Row>
+              }
+            />
+            <Route path="/add" element={<AddEmployeeForm />} />
+            <Route path="/employee/:id" element={<EmployeeDetail />} />
+            <Route path="/edit/:id" element={<EditEmployeeForm />} />
+            <Route path="/add-to-team" element={<AddEmployeeToTeam />} />
+            <Route path="/display-team" element={<DisplayTeam />} />
+          </Routes>
+        </Container>
+      </Router>
+    </EmployeeProvider>
   );
-}
+};
 
 export default App;
