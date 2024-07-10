@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.no-border {
+  border: none !important;
+}
+
+.no-border th, .no-border td {
+  border: none !important;
+}
+
+.no-border .list-group-item {
+  border: none !important;
+}

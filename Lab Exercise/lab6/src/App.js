@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import SchoolList from './components/SchoolList';
+import CourseList from './components/CourseList';
+import './App.css'; // Make sure this is imported at the top of the file
 
-function App() {
+
+const App = () => {
+  const [schools, setSchools] = useState([]);
+  const [courses, setCourses] = useState([]);
+  const [selectedSchools, setSelectedSchools] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const schoolResponse = await fetch('http://localhost:9999/school');
+      const courseResponse = await fetch('http://localhost:9999/course');
+      const schoolData = await schoolResponse.json();
+      const courseData = await courseResponse.json();
+      setSchools(schoolData);
+      setCourses(courseData);
+    };
+    fetchData();
+  }, []);
+
+  const toggleSchoolSelection = (schoolId) => {
+    setSelectedSchools((prevSelectedSchools) => 
+      prevSelectedSchools.includes(schoolId)
+        ? prevSelectedSchools.filter(id => id !== schoolId)
+        : [...prevSelectedSchools, schoolId]
+    );
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Row>
+        <Col md={7}>
+          <CourseList
+            courses={courses}
+            schools={schools}
+            selectedSchools={selectedSchools}
+          />
+        </Col>
+        <Col md={5}>
+          <SchoolList
+            schools={schools}
+            selectedSchools={selectedSchools}
+            toggleSchoolSelection={toggleSchoolSelection}
+          />
+        </Col>
+      </Row>
+    </Container>
   );
-}
+};
 
 export default App;
