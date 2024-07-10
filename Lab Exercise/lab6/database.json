@@ -1,0 +1,171 @@
+{
+  "school": [
+    {
+      "id": "1",
+      "name": "Greenwood High School",
+      "address": {
+        "street": "123 Maple Street",
+        "city": "Greenwood",
+        "zipcode": "54321"
+      },
+      "phone": "555-123-4567",
+      "website": "greenwoodhigh.edu",
+      "principal": "Dr. Emily Clark",
+      "establishedYear": 1995
+    },
+    {
+      "id": "2",
+      "name": "Lakeside Elementary School",
+      "address": {
+        "street": "456 Lake Avenue",
+        "city": "Lakeside",
+        "zipcode": "67890"
+      },
+      "phone": "555-234-5678",
+      "website": "lakesideelem.edu",
+      "principal": "Mrs. Jane Smith",
+      "establishedYear": 1980
+    },
+    {
+      "id": "3",
+      "name": "Rivertown Middle School",
+      "address": {
+        "street": "789 River Road",
+        "city": "Rivertown",
+        "zipcode": "13579"
+      },
+      "phone": "555-345-6789",
+      "website": "rivertownms.edu",
+      "principal": "Mr. John Doe",
+      "establishedYear": 2005
+    },
+    {
+      "id": "4",
+      "name": "Sunset High School",
+      "address": {
+        "street": "101 Sunset Blvd",
+        "city": "Sunset City",
+        "zipcode": "24680"
+      },
+      "phone": "555-456-7890",
+      "website": "sunseths.edu",
+      "principal": "Dr. Alice Johnson",
+      "establishedYear": 1990
+    },
+    {
+      "id": "5",
+      "name": "Hillcrest Academy",
+      "address": {
+        "street": "202 Hillcrest Lane",
+        "city": "Hillcrest",
+        "zipcode": "11223"
+      },
+      "phone": "555-567-8901",
+      "website": "hillcrestacademy.edu",
+      "principal": "Ms. Carol Brown",
+      "establishedYear": 2010
+    }
+  ],
+  "course": [
+    {
+      "id": "1",
+      "name": "Mathematics",
+      "description": "Basic mathematics principles and problem-solving techniques.",
+      "credits": 3,
+      "schoolId": "1",
+      "mandatory": true,
+      "teacher": "Mr. Alan Walker",
+      "duration": "1 semester"
+    },
+    {
+      "id": "2",
+      "name": "English Literature",
+      "description": "Study of English literary works from various periods.",
+      "credits": 3,
+      "schoolId": "2",
+      "mandatory": true,
+      "teacher": "Ms. Emma Green",
+      "duration": "1 semester"
+    },
+    {
+      "id": "3",
+      "name": "Science",
+      "description": "Fundamentals of physical and biological sciences.",
+      "credits": 4,
+      "schoolId": "3",
+      "mandatory": true,
+      "teacher": "Dr. Michael White",
+      "duration": "1 semester"
+    },
+    {
+      "id": "4",
+      "name": "History",
+      "description": "Overview of world history from ancient to modern times.",
+      "credits": 3,
+      "schoolId": "4",
+      "mandatory": false,
+      "teacher": "Mrs. Linda Black",
+      "duration": "1 semester"
+    },
+    {
+      "id": "5",
+      "name": "Physical Education",
+      "description": "Physical fitness and wellness activities.",
+      "credits": 2,
+      "schoolId": "5",
+      "mandatory": true,
+      "teacher": "Coach Mark Brown",
+      "duration": "1 semester"
+    },
+    {
+      "id": "6",
+      "name": "Art",
+      "description": "Introduction to various forms of visual arts.",
+      "credits": 2,
+      "schoolId": "1",
+      "mandatory": false,
+      "teacher": "Ms. Sarah Thompson",
+      "duration": "1 semester"
+    },
+    {
+      "id": "7",
+      "name": "Music",
+      "description": "Basic music theory and practice.",
+      "credits": 2,
+      "schoolId": "2",
+      "mandatory": false,
+      "teacher": "Mr. David Adams",
+      "duration": "1 semester"
+    },
+    {
+      "id": "8",
+      "name": "Computer Science",
+      "description": "Introduction to programming and computer systems.",
+      "credits": 4,
+      "schoolId": "3",
+      "mandatory": true,
+      "teacher": "Dr. Lisa Wilson",
+      "duration": "1 semester"
+    },
+    {
+      "id": "9",
+      "name": "Geography",
+      "description": "Study of Earth's landscapes, environments, and places.",
+      "credits": 3,
+      "schoolId": "4",
+      "mandatory": false,
+      "teacher": "Mr. James Carter",
+      "duration": "1 semester"
+    },
+    {
+      "id": "10",
+      "name": "Chemistry",
+      "description": "Introduction to chemical principles and reactions.",
+      "credits": 4,
+      "schoolId": "5",
+      "mandatory": true,
+      "teacher": "Dr. Karen Martin",
+      "duration": "1 semester"
+    }
+  ]
+}
