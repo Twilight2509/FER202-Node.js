@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 600px;
+        padding: 10px;
+    }
+    .button-container {
+        text-align: right;
+    }
+</style>
+
+<body>
+    <form class="container">
+        <h2>CÁC THAO TÁC VỚI MẢNG</h2>
+
+        <label for="result">Kết quả</label>
+        <input type="text" id="result" name="result">
+
+        <form>
+            <legend>Chọn</legend>
+            <input type="radio" id="nhap_mang" name="operation" value="nhap_mang">
+            <label for="nhap_mang">Nhập mảng</label>
+
+            <input type="radio" id="in_mang" name="operation" value="in_mang">
+            <label for="in_mang">In mảng</label>
+
+            <input type="radio" id="tong_le" name="operation" value="tong_le">
+            <label for="tong_le">Tổng lẻ</label><br>
+
+            <input type="radio" id="tich_chan" name="operation" value="tich_chan">
+            <label for="tich_chan">Tích chẵn</label>
+
+            <input type="radio" id="sap_xep" name="operation" value="sap_xep">
+            <label for="sap_xep">Sắp xếp</label>
+        </form>
+
+        <div class="button-container">
+            <button type="submit">Thực hiện</button>
+            <button type="button">Thoát</button>
+        </div>
+    </form>
+</body>
+
+</html>

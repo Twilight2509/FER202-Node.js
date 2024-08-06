@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { font-weight: bold;}
+        .container {
+            width: 600px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>ĐỐI TƯỢNG STRING</h2>
+        <form>
+            <label for="inputText">Nhập đoạn văn:</label><br>
+            <textarea id="inputText" rows="4" cols="50"></textarea><br>
+
+            <label for="characterCount">Tổng số ký tự:</label>
+            <input id="characterCount" class="result" style="width: 30px;background-color: rgb(56, 225, 244);" >
+            <hr>
+            <label>Nhập vị trí
+                <input type="text" style="width: 30px; "> Ký tự tương ứng <input class="result" style="width: 30px; background-color: rgb(56, 225, 244);">
+            </label>
+            <hr>
+            <label>Nhập chuỗi <input type="text" style="width: 30px;"> Vị trí tương ứng <input class="result"
+                    style="width: 30px; background-color: rgb(56, 225, 244);" ></label><br>
+            <hr>
+            <label>Nhập vị trí cần tách Từ: <input type="text" style="width: 30px;"> Đến <input type="text"
+                    style="width: 30px;"> Kết quả
+                <span class="result"></span></label><br>
+
+            <div class="buttons">
+                <input type="button" value="Nhập lại">
+                <input type="button" value="Thoát" onclick="closeWindow()">
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    const inputText = document.getElementById('inputText');
+    const characterCount = document.getElementById('characterCount');
+
+    function updateCharCount() {
+        characterCount.value = inputText.value.length;
+    }
+    function closeWindow() {
+        window.close();
+    }
+</script>
+
+</html>

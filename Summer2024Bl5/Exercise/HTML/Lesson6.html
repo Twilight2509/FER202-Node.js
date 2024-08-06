@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .re {
+        width: 250px;
+    }
+</style>
+
+<body>
+    <div>
+        <h2 style="color: blue;">GIẢI PHƯƠNG TRÌNH BẬC NHẤT</h2>
+        <form onsubmit="calculate(event)">
+            <div>
+                <label for="num_a">Nhập a:<label>
+                        <input type="number" id="num_a" name="num_a">
+            </div>
+            <div>
+                <label for="num_b">Nhập b:<label>
+                        <input type="number" id="num_b" name="num_b">
+            </div>
+            <div class="button">
+                <input type="submit" value="Giải PT">
+                <input type="reset" value="Thoát">
+            </div>
+        </form>
+        <h3>Kết luận nghiệm<h3>
+                <input class="re" id="result">
+    </div>
+</body>
+<script>
+
+    var a;
+    var b;
+    function value() {
+        a = parseFloat(document.getElementById("num_a").value);
+        b = parseFloat(document.getElementById("num_b").value);
+    }
+    function calculate(event) {
+        event.preventDefault();
+        value();
+        var result = -b / a;
+        document.getElementById("result").value = "Phương trình có 1 nghiệm x = " + result;
+    }
+
+</script>
+
+</html>

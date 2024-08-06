@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body { font-weight: bold;}
+    label { display: inline-block; width: 130px;  color: blue;}
+    .button { display: none; }
+    .inputNumberN input, .input select {
+            width: 150px; /* Đặt chiều rộng cố định cho cả input và select */
+        }
+        .re { margin-top: 100px; }
+</style>
+<body>
+    <div>
+        <h2 style="color: blue;">THỰC HIỆN PHÉP TOÁN</h2>
+        <form id="mathForm" onsubmit="return MathEvent(event)">
+            <div class="inputNumberN">
+                <label for="num">Nhập n:</label>
+                <input type="number" id="num" name="num" min="2" max="99"><a>(1 &lt; n &lt; 100)</a>
+            </div>
+            <div class="input">
+                <label for="operation">Chọn phép toán:</label>
+                <select id="operation" name="operation" required>
+                    <option value="sum">Tổng n số liên tiếp</option>
+                    <option value="factorial">Tính n!</option>
+                    <option value="odd">In dãy lẻ</option>
+                    <option value="even">In dãy số chẵn</option>
+                    <option value="primeCheck">Kiểm tra số nguyên tố</option>
+                </select>
+            </div>
+            <div class="button">
+                <input type="submit" value="Tính">
+            </div>
+            <div class="re">
+                <label for="result">Kết quả:</label>
+                <input type="text" id="result" name="result" readonly>
+            </div>
+        </form>
+    </div>
+    <script src="java.js"></script>
+</body>
+
+</html>

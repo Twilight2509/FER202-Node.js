@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim Max va Tim Min</title>
+    <style>
+        body { font-family: Arial, sans-serif; font-style: bold;}
+       
+        h1 { color: blue; text-align: center; }
+        label { display: inline-block; width: 60px;  }
+        input[type="text"] { width: 150px; margin-bottom: 5px; background-color: aqua;}
+        input[type="radio"] { margin-right: 5px; }
+        button { margin-top: 10px; }
+        .choice { display: flex;}
+        .but { text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TÌM MAX VÀ TÌM MIN</h1>
+        
+            <label for="a">Nhập a:</label>
+            <input type="text" id="a" name="a"><br>
+            <label for="b">Nhập b:</label>
+            <input type="text" id="b" name="b"><br>
+            <label for="c">Nhập c:</label>
+            <input type="text" id="c" name="c"><br>
+            <label for="result">Kết quả:</label>
+            <input type="text" id="result" name="result" readonly><br>
+            <div class="choice">
+                <input type="radio" id="max" name="operation" value="max">
+            <a>TÌm số lớn nhất</a><br>
+            <input type="radio" id="min" name="operation" value="min">
+            <a>Tìm số nhỏ nhất</a><br>
+            </div>
+            <div class="but">
+                <button type="button" onclick="calculate()">Tim</button>
+            <button type="reset">Xoa</button>
+            </div>
+        
+    </div>
+    <script>
+        function calculate() {
+            // Add JavaScript logic here to find max or min
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1</title>
+</head>
+<script>
+    function add() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        let result = document.getElementById("result");
+        result.innerHTML = Number(a) + Number(b);
+    }
+    function sub() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        let result = document.getElementById("result");
+        result.innerHTML = Number(a) - Number(b);
+    }
+    function mul() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        let result = document.getElementById("result");
+        result.innerHTML = Number(a) * Number(b);
+    }
+    function div() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        let result = document.getElementById("result");
+        result.innerHTML = Number(a) / Number(b);
+    }
+
+</script>
+<style>
+    .container { width: 500px; margin: auto; padding: 10px;}
+    h1 {color: blue; text-align: center;}
+    input[type="number"] { width: 150px; margin-bottom: 5px; background-color: aqua;}
+    input[type="text"] { width: 150px; margin-bottom: 5px; background-color: rgb(231, 77, 190);}
+</style>
+
+<body>
+    <div class="container">
+        <h1>Thực hiện phép toán</h1>
+        <div>
+            Nhập a:
+            <input type="number" id="num1">
+        </div>
+        <div>
+            Nhập b:
+            <input type="number" id="num2">
+        </div>
+        <button onclick="add()">a + b</button>
+        <button onclick="sub()">a - b</button>
+        <button onclick="mul()">a * b</button>
+        <button onclick="div()">a / b</button>
+        <div>
+            <h1>Kết quả : </h1>
+            <input type="text" id="result">
+        </div>
+    </div>
+
+</body>
+
+</html>
