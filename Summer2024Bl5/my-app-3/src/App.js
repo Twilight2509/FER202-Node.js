@@ -2,6 +2,9 @@ import React from "react";
 import {Row, Col, Table, Form, Button} from 'react-bootstrap';
 import Data from "./Data";
 import { useState } from "react"; //1 tinh nang cua HOOK
+import InputText from "./components/inputText";
+import TableList from "./components/tableList";
+import SelectBox from "./components/SelectBox";
 
 
 function App() {
@@ -74,12 +77,31 @@ function App() {
   }
 
 
+  const convertOpToNumber = (operator) => {
+    switch (operator) {
+      case "Cong":
+        return "0";
+      case "Tru":
+        return "1";
+      case "Nhan":
+        return "2";
+      case "Chia":
+        return "3";
+      case "UCLN":
+        return "4";
+      case "BCNN":
+        return "5";
+      default:
+        return "0";
+    }
+  };
+
   const [selectedItem, setSelectedItem] = useState("");
   const SelectedChange = (item) => {
     console.log(item);
     setA(item.a);
     setB(item.b);
-    setOp(item.op);
+    setOp(convertOpToNumber(item.op)); 
     setResult(item.result);
   }
 
@@ -87,29 +109,9 @@ function App() {
   return (
     <Row>
       <Col sm={5}>
-        <div>
-          <label htmlFor="a" style={{ color: "red", fontWeight: "bold" }}>
-            Enter a: <input name="a" className="form-control" type="text" id="a" onChange={(e) => setA(e.target.value)} value ={a}/>
-          </label>
-        </div>
-        <div>
-          <label htmlFor="b" style={{ color: "red", fontWeight: "bold" }}>
-            Enter b: <input name="b" className="form-control" type="text" id="b" onChange={(e) => setB(e.target.value)} value = {b}/>
-          </label>
-        </div>
-        <div>
-          <div>
-            <label htmlFor="" style={{ color: "red", fontWeight: "bold" }} id="op">
-              Operator: 
-            </label>
-          </div>
-          <Form.Select name="op" id="op" onChange={(e) => setOp(e.target.value)} value={op}>
-            <option value ="0">+</option>
-            <option value ="1">-</option>
-            <option value ="2">*</option>
-            <option value ="3">/</option>
-          </Form.Select>
-        </div>
+        <InputText message="Enter a: " value={a} setValue={setA}></InputText>
+        <InputText message="Enter b: " value={b} setValue={setB}></InputText>
+        <SelectBox ></SelectBox>
         <div>
           <div>
             <label htmlFor="" style={{ color: "red", fontWeight: "bold" }} id="op">
@@ -133,34 +135,7 @@ function App() {
 
       </Col>
       <Col sm={7}>
-        <div>
-            <label htmlFor="" style={{ color: "blue", fontWeight: "bold" }}>
-              List of Operator:
-            </label>
-        </div>
-        <Table bordered hover striped variant="">
-          <thead>
-            <tr>
-              <th>a</th>
-              <th>b</th>
-              <th>Operator</th>
-              <th>Result</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map(i=>(
-              <tr>
-                <td>{i.a}</td>
-                <td>{i.b}</td>
-                <td>{i.op}</td>
-                <td>{i.result}</td>
-                <td>
-                  <Button onClick={() => SelectedChange(i)}>Select</Button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </Table>
+        <TableList data={data} SelectedChange={SelectedChange}></TableList>
       </Col>
 
     </Row>
