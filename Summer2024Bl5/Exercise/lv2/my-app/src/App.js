@@ -14,7 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<S12 />} />
+        <Route path="/" element={<L5/>} />
 
       </Routes>
     </BrowserRouter>

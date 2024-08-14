@@ -1,4 +1,6 @@
-import React from 'react';
+import React from "react";
+import { Table, Form, Button, Col, Row } from "react-bootstrap";
+import {useState} from "react";
 
 // Function definitions
 function add() {
@@ -35,13 +37,14 @@ let mylist = [
 
 function Lesson1() {
   return (
-    <div className="App">
-      <div className="container">
-        <h1 style={{ color: "blue", textAlign: "center" }}>Thực hiện phép toán</h1>
-        <div>
-          Nhập a:
-          <input type="number" id="num1"></input>
-        </div>
+    <Row>
+      <Col sm={5}>
+        <h1 style={{ color: "blue", textAlign: "center" }}>
+          Thực hiện phép toán
+        </h1>
+        <label>
+          Nhập a:<input className="form-control" type="number" id="num1" inline></input>         
+        </label>
         <div>
           Nhập b:
           <input type="number" id="num2"></input>
@@ -54,31 +57,33 @@ function Lesson1() {
           <h1>Kết quả: </h1>
           <input type="text" id="result"></input>
         </div>
-      </div>
-      <div>
-        List of Operators:
-        <table border="1">
-          <thead>
-            <tr>
-              <td>a</td>
-              <td>b</td>
-              <td>Operator</td>
-              <td>Result</td>
-            </tr>
-          </thead>
-          <tbody>
-            {mylist.map((i, index) => (
-              <tr key={index}>
-                <td>{i.a}</td>
-                <td>{i.b}</td>
-                <td>{i.op}</td>
-                <td>{i.result}</td>
+      </Col>
+      <Col sm={7}>
+        <div>
+          List of Operators:
+          <table border="1">
+            <thead>
+              <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>Operator</td>
+                <td>Result</td>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
+            </thead>
+            <tbody>
+              {mylist.map((i, index) => (
+                <tr key={index}>
+                  <td>{i.a}</td>
+                  <td>{i.b}</td>
+                  <td>{i.op}</td>
+                  <td>{i.result}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </Col>
+    </Row>
   );
 }
 
