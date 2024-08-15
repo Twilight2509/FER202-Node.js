@@ -1,0 +1,71 @@
+{
+  "students": [
+    {
+      "student_id": 1,
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@example.com",
+      "date_of_birth": "2001-05-15"
+    },
+    {
+      "student_id": 2,
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane.smith@example.com",
+      "date_of_birth": "2002-07-21"
+    },
+    {
+      "student_id": 3,
+      "first_name": "Alice",
+      "last_name": "Johnson",
+      "email": "alice.johnson@example.com",
+      "date_of_birth": "2000-09-11"
+    }
+  ],
+  "courses": [
+    {
+      "course_id": 101,
+      "course_name": "Introduction to Computer Science",
+      "instructor": "Dr. Alan Turing",
+      "credits": 3
+    },
+    {
+      "course_id": 102,
+      "course_name": "Advanced Mathematics",
+      "instructor": "Dr. Ada Lovelace",
+      "credits": 4
+    },
+    {
+      "course_id": 103,
+      "course_name": "Physics 101",
+      "instructor": "Dr. Albert Einstein",
+      "credits": 3
+    }
+  ],
+  "enrollments": [
+    {
+      "enrollment_id": 1,
+      "student_id": 1,
+      "course_id": 101,
+      "enrollment_date": "2024-01-10"
+    },
+    {
+      "enrollment_id": 2,
+      "student_id": 2,
+      "course_id": 102,
+      "enrollment_date": "2024-01-12"
+    },
+    {
+      "enrollment_id": 3,
+      "student_id": 3,
+      "course_id": 103,
+      "enrollment_date": "2024-01-15"
+    },
+    {
+      "enrollment_id": 4,
+      "student_id": 1,
+      "course_id": 102,
+      "enrollment_date": "2024-01-20"
+    }
+  ]
+}
