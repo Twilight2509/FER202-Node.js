@@ -13,15 +13,15 @@ const EmployeeProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const deptResponse = await axios.get('http://localhost:9999/departments');
+      const deptResponse = await axios.get('http://localhost:9998/departments');
       setDepartments(deptResponse.data);
-      const empResponse = await axios.get('http://localhost:9999/employees');
+      const empResponse = await axios.get('http://localhost:9998/employees');
       setEmployees(empResponse.data);
     };
     fetchData();
   }, []);
   const addEmployee = async (employee) => {
-    const response = await axios.post('http://localhost:9999/employees', {
+    const response = await axios.post('http://localhost:9998/employees', {
       ...employee,
       id: employees.length + 1,
       department: Number(employee.department),
