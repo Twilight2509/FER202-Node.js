@@ -1,0 +1,126 @@
+{
+  "items": [
+    {
+      "id": "i001",
+      "name": "Bluetooth Speaker",
+      "type": "tech",
+      "cost": 34.5,
+      "feedbacks": [
+        {
+          "stars": 5
+        },
+        {
+          "stars": 4
+        },
+        {
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "id": "i002",
+      "name": "Laptop Stand",
+      "type": "tech",
+      "cost": 18.0,
+      "feedbacks": [
+        {
+          "stars": 3
+        },
+        {
+          "stars": 2
+        },
+        {
+          "stars": 4
+        }
+      ]
+    },
+    {
+      "id": "i003",
+      "name": "Skipping Rope",
+      "type": "sports",
+      "cost": 9.99,
+      "feedbacks": [
+        {
+          "stars": 4
+        },
+        {
+          "stars": 4
+        },
+        {
+          "stars": 5
+        }
+      ]
+    },
+    {
+      "id": "i004",
+      "name": "Dumbbells Set",
+      "type": "sports",
+      "cost": 59.9,
+      "feedbacks": [
+        {
+          "stars": 5
+        },
+        {
+          "stars": 5
+        },
+        {
+          "stars": 4
+        }
+      ]
+    },
+    {
+      "id": "i005",
+      "name": "Graphic T-shirt",
+      "type": "fashion",
+      "cost": 13.75,
+      "feedbacks": [
+        {
+          "stars": 3
+        },
+        {
+          "stars": 4
+        }
+      ]
+    }
+  ],
+  "purchases": [
+    {
+      "id": "p1001",
+      "date": "2025-01-15T09:00:00Z",
+      "address": "12 Main Road, Hue City",
+      "details": [
+        {
+          "id": "i001",
+          "name": "Bluetooth Speaker",
+          "cost": 34.5,
+          "qty": 2
+        },
+        {
+          "id": "i002",
+          "name": "Laptop Stand",
+          "cost": 18.0,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "id": "p1002",
+      "date": "2025-01-17T13:45:00Z",
+      "address": "7 Parkview Street, Hanoi",
+      "details": [
+        {
+          "id": "i003",
+          "name": "Skipping Rope",
+          "cost": 9.99,
+          "qty": 2
+        },
+        {
+          "id": "i004",
+          "name": "Dumbbells Set",
+          "cost": 59.9,
+          "qty": 1
+        }
+      ]
+    }
+  ]
+}
