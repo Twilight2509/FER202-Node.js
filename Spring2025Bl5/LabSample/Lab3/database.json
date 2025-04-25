@@ -1,0 +1,70 @@
+{
+    "bookCatalog": [
+      {
+        "id": "b001",
+        "bookName": "Design for Hackers",
+        "writer": "David Kadavy",
+        "category": "UX",
+        "feedbackList": [
+          {
+            "reader": { "name": "Linh", "verified": true },
+            "comment": "Nice insights into design.",
+            "score": 4,
+            "submittedAt": "2024-07-01T09:00:00Z"
+          },
+          {
+            "reader": { "name": "Minh", "verified": false },
+            "comment": "Too basic.",
+            "score": 2,
+            "submittedAt": "2024-07-02T13:00:00Z"
+          }
+        ],
+        "isBestSeller": true
+      },
+      {
+        "id": "b002",
+        "bookName": "Make Time",
+        "writer": null,
+        "category": "productivity",
+        "feedbackList": [],
+        "isBestSeller": false
+      },
+      {
+        "id": "b003",
+        "bookName": "Deep Work",
+        "writer": "Cal Newport",
+        "category": "focus",
+        "feedbackList": [
+          {
+            "reader": { "name": "Dũng", "verified": true },
+            "comment": "Highly recommended.",
+            "score": 5,
+            "submittedAt": "2024-07-05T08:30:00Z"
+          }
+        ],
+        "isBestSeller": true
+      },
+      {
+        "id": "b004",
+        "bookName": "Refactoring UI",
+        "writer": "Adam Wathan",
+        "category": "UI",
+        "feedbackList": [
+          {
+            "reader": { "name": "Trang", "verified": true },
+            "comment": "Love the visuals!",
+            "score": 5,
+            "submittedAt": "2024-07-06T10:00:00Z"
+          },
+          {
+            "reader": { "name": "Hoàng", "verified": false },
+            "comment": "Expected more.",
+            "score": 3,
+            "submittedAt": "2024-07-07T12:00:00Z"
+          }
+        ],
+        "isBestSeller": true
+      }
+    ]
+  }
+  

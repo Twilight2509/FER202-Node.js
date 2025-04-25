@@ -1,0 +1,62 @@
+{
+    "researchProjects": [
+      {
+        "id": "R101",
+        "projectName": "AI-based Traffic Forecasting",
+        "leader": "Dr. Nguyen Van A",
+        "field": "Computer Science",
+        "funding": 150000,
+        "startDate": "2023-01-10",
+        "isFunded": true,
+        "reviews": [
+          {
+            "committeeName": "Prof. Le Thi B",
+            "comment": "Well-structured methodology.",
+            "score": 4
+          },
+          {
+            "committeeName": "Assoc. Prof. Tran C",
+            "comment": "Improve evaluation metrics.",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "id": "R102",
+        "projectName": "Renewable Energy Optimization",
+        "leader": "Dr. Pham Minh D",
+        "field": "Energy Engineering",
+        "funding": 210000,
+        "startDate": "2022-11-05",
+        "isFunded": false,
+        "reviews": []
+      },
+      {
+        "id": "R103",
+        "projectName": "IoT-based Smart Farming",
+        "leader": "Dr. Hoang Kim E",
+        "field": "Agricultural Technology",
+        "funding": 98000,
+        "startDate": "2023-05-20",
+        "isFunded": true,
+        "reviews": [
+          {
+            "committeeName": "Dr. Nguyen Thanh F",
+            "comment": "Useful for rural areas.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "id": "R104",
+        "projectName": "Blockchain for Academic Records",
+        "leader": "Dr. Le Minh G",
+        "field": "Information Systems",
+        "funding": 130000,
+        "startDate": "2023-03-15",
+        "isFunded": true,
+        "reviews": []
+      }
+    ]
+  }
+  

@@ -1,0 +1,133 @@
+{
+  "analysts": [
+    {
+      "id": 1,
+      "fullname": "Dr. Maya Nguyen",
+      "experience": 8
+    },
+    {
+      "id": 2,
+      "fullname": "Mr. Takumi Hiroshi",
+      "experience": 12
+    },
+    {
+      "id": 3,
+      "fullname": "Ms. Clara Mendes",
+      "experience": 6
+    }
+  ],
+  "supervisors": [
+    {
+      "id": 1,
+      "name": "Alice Tran",
+      "seniorityLevel": "Senior"
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "seniorityLevel": "Lead"
+    },
+    {
+      "id": 3,
+      "name": "Karen Yamada",
+      "seniorityLevel": "Principal"
+    }
+  ],
+  "staff": [
+    {
+      "id": 1,
+      "name": "Huynh Tan Phat",
+      "position": "Backend Dev"
+    },
+    {
+      "id": 2,
+      "name": "Le Kim Oanh",
+      "position": "UI/UX"
+    },
+    {
+      "id": 3,
+      "name": "Dang Phu Cuong",
+      "position": "QA Engineer"
+    },
+    {
+      "id": 4,
+      "name": "Tran Quoc Bao",
+      "position": "Frontend Dev"
+    },
+    {
+      "id": 5,
+      "name": "Ngo Mai Linh",
+      "position": "Data Engineer"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "projectCode": "PX001",
+      "projectTitle": "Customer Insight AI",
+      "startedAt": "2025-02-10",
+      "summary": "AI-based system to extract insights from customer feedback.",
+      "supervisor": 2,
+      "analyst": 1,
+      "technologies": [
+        "Python",
+        "TensorFlow"
+      ],
+      "keyMembers": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": 2,
+      "projectCode": "PX002",
+      "projectTitle": "Retail POS System",
+      "startedAt": "2025-01-15",
+      "summary": "Integrated POS system for chain retail stores.",
+      "supervisor": 1,
+      "analyst": 2,
+      "technologies": [
+        "React",
+        "Node.js"
+      ],
+      "keyMembers": [
+        1
+      ]
+    },
+    {
+      "id": 3,
+      "projectCode": "PX003",
+      "projectTitle": "E-Learning Platform",
+      "startedAt": "2025-03-01",
+      "summary": "Modern e-learning solution for universities.",
+      "supervisor": 3,
+      "analyst": 3,
+      "technologies": [
+        "Vue",
+        "Firebase"
+      ],
+      "keyMembers": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": 4,
+      "projectCode": "PX004",
+      "projectTitle": "Smart Warehouse System",
+      "startedAt": "2025-02-22",
+      "summary": "Automation and IoT-based inventory tracking.",
+      "supervisor": 1,
+      "analyst": 1,
+      "technologies": [
+        "IoT",
+        "C#",
+        "Azure"
+      ],
+      "keyMembers": [
+        3,
+        5
+      ]
+    }
+  ]
+}

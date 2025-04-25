@@ -1,0 +1,156 @@
+{
+  "students": [
+    {
+      "id": "ST-001",
+      "fullName": "Alice Johnson",
+      "age": 21,
+      "major": "Computer Science",
+      "gpa": 3.9,
+      "email": "alice.johnson@univ.edu",
+      "enrolledDate": "2023-08-15",
+      "status": "active"
+    },
+    {
+      "id": "ST-002",
+      "fullName": "Bob Martínez",
+      "age": 22,
+      "major": "Information Systems",
+      "gpa": 3.4,
+      "email": "bob.martinez@univ.edu",
+      "enrolledDate": "2023-08-15",
+      "status": "active"
+    },
+    {
+      "id": "ST-003",
+      "fullName": "Charlie Nguyen",
+      "age": 20,
+      "major": "Software Engineering",
+      "gpa": 3.7,
+      "email": "charlie.nguyen@univ.edu",
+      "enrolledDate": "2023-08-15",
+      "status": "active"
+    },
+    {
+      "id": "ST-004",
+      "fullName": "Dana Li",
+      "age": 23,
+      "major": "Data Science",
+      "gpa": 3.6,
+      "email": "dana.li@univ.edu",
+      "enrolledDate": "2023-08-15",
+      "status": "active"
+    },
+    {
+      "id": "ST-005",
+      "fullName": "Elias Kim",
+      "age": 21,
+      "major": "Computer Engineering",
+      "gpa": 3.8,
+      "email": "elias.kim@univ.edu",
+      "enrolledDate": "2023-08-15",
+      "status": "active"
+    }
+  ],
+  "submissions": [
+    {
+      "id": 101,
+      "assignmentTitle": "React To-Do App",
+      "studentId": "ST-001",
+      "submissionDate": "2025-04-20T10:15:00Z",
+      "status": "pending",
+      "grade": null,
+      "score": null,
+      "feedback": ""
+    },
+    {
+      "id": 102,
+      "assignmentTitle": "Node.js REST API",
+      "studentId": "ST-002",
+      "submissionDate": "2025-04-19T14:30:00Z",
+      "status": "submitted",
+      "grade": "B+",
+      "score": 88,
+      "feedback": "Well structured endpoints"
+    },
+    {
+      "id": 103,
+      "assignmentTitle": "MongoDB Schema Design",
+      "studentId": "ST-003",
+      "submissionDate": "2025-04-18T09:00:00Z",
+      "status": "submitted",
+      "grade": "A-",
+      "score": 91,
+      "feedback": "Clear ERD and relations"
+    },
+    {
+      "id": 104,
+      "assignmentTitle": "Express Authentication",
+      "studentId": "ST-004",
+      "submissionDate": "2025-04-21T16:45:00Z",
+      "status": "pending",
+      "grade": null,
+      "score": null,
+      "feedback": ""
+    },
+    {
+      "id": 105,
+      "assignmentTitle": "Redux State Management",
+      "studentId": "ST-005",
+      "submissionDate": "2025-04-20T12:00:00Z",
+      "status": "submitted",
+      "grade": "A",
+      "score": 95,
+      "feedback": "Excellent use of thunks"
+    },
+    {
+      "id": 106,
+      "assignmentTitle": "ASP.NET Core Web API",
+      "studentId": "ST-001",
+      "submissionDate": "2025-04-18T11:20:00Z",
+      "status": "pending",
+      "grade": null,
+      "score": null,
+      "feedback": ""
+    },
+    {
+      "id": 107,
+      "assignmentTitle": "Blazor CRUD App",
+      "studentId": "ST-002",
+      "submissionDate": "2025-04-19T13:10:00Z",
+      "status": "submitted",
+      "grade": "B",
+      "score": 85,
+      "feedback": "UI could be improved"
+    },
+    {
+      "id": 108,
+      "assignmentTitle": "Dockerize Node Service",
+      "studentId": "ST-003",
+      "submissionDate": "2025-04-21T08:50:00Z",
+      "status": "pending",
+      "grade": null,
+      "score": null,
+      "feedback": ""
+    },
+    {
+      "id": 109,
+      "assignmentTitle": "SignalR Chat Room",
+      "studentId": "ST-004",
+      "submissionDate": "2025-04-20T15:25:00Z",
+      "status": "submitted",
+      "grade": "A",
+      "score": 93,
+      "feedback": "Real-time features work well"
+    },
+    {
+      "id": 110,
+      "assignmentTitle": "GraphQL Server",
+      "studentId": "ST-005",
+      "submissionDate": "2025-04-19T10:05:00Z",
+      "status": "submitted",
+      "grade": "A-",
+      "score": 90,
+      "feedback": "Efficient query resolvers"
+    }
+  ]
+}
