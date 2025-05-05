@@ -3,20 +3,22 @@ import { MovieContext } from '../context/MovieContext';
 import { Container, Form } from 'react-bootstrap';
 
 const GenreFilter = () => {
-  const { genre } = useContext(MovieContext);
+  const { genres, setGenre } = useContext(MovieContext);
 
-  console.log('Genres:', genre); // Kiểm tra dữ liệu
+  console.log('Genres:', genres); // Kiểm tra dữ liệu
 
   return (
     <Container>
       <h5>Genre Filter</h5>
-      {genre && genre.length > 0 ? (
-        genre.map((g) => (
+      {genres && genres.length > 0 ? (
+        genres.map((g) => (
           <Form.Group key={g.id} controlId={`genre-${g.id}`}>
             <Form.Check
-              type="checkbox"
+              type="radio"
+              name='genre'
+              value={g.id}
               label={`${g.name?.first_name || ''} ${g.name?.last_name || ''}`.trim()}
-              onChange={() => console.log(`Selected genre: ${g.id}`)} // Để debug
+              onChange={(e) => setGenre(e.target.value)} // Để debug
             />
           </Form.Group>
         ))

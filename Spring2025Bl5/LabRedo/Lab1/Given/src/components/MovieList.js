@@ -3,12 +3,19 @@ import { Card, Button, Container, Row, Col } from "react-bootstrap";
 import { MovieContext } from "../context/MovieContext";
 
 const MovieList = () => {
-  const { movie, getDirectorName, getGenreName } = useContext(MovieContext);
+  const { movie, getDirectorName, getGenreName, director, genre } = useContext(MovieContext);
+
+  const filteredMovie = movie.filter(
+    (movie) =>
+        (!director || movie.director === Number(director)) &&
+        (!genre || movie.genre === Number(genre))
+  );
+
   return (
     <Container>
       <h1 style={{textAlign: "center"}}>List of Movies</h1>
       <Row>
-        {movie.map((m) => (
+        {filteredMovie.map((m) => (
           <Col md={3} mb={4} key={m.id}>
             <Card className="h-100">
               <Card.Body>

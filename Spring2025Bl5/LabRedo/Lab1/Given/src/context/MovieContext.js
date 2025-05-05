@@ -5,8 +5,10 @@ export const MovieContext = createContext();
 
 export const MovieProvider = ({ children }) => {
     const [movie, setMovie] = useState([]);
-    const [director, setDirector] = useState([]);
-    const [genre, setGenre] = useState([]);
+    const [directors, setDirectors] = useState([]);
+    const [genres, setGenres] = useState([]);
+    const [director, setDirector] = useState("");
+    const [genre, setGenre] = useState("");
 
     useEffect(() => {
         const fetchData = async () => {
@@ -15,10 +17,10 @@ export const MovieProvider = ({ children }) => {
                 setMovie(movieRes.data);
 
                 const directorRes = await axios.get("http://localhost:9999/directors");
-                setDirector(directorRes.data);
+                setDirectors(directorRes.data);
 
                 const genreRes = await axios.get("http://localhost:9999/genres");
-                setGenre(genreRes.data);
+                setGenres(genreRes.data);
             } catch (error) {
                 console.error("Error fetching data:", error);
             }
@@ -28,13 +30,13 @@ export const MovieProvider = ({ children }) => {
 
     // Hàm lấy tên đạo diễn dựa trên ID
     const getDirectorName = (directorId) => {
-        const foundDirector = director.find((d) => d.id === directorId);
+        const foundDirector = directors.find((d) => d.id === directorId);
         return foundDirector ? foundDirector.name : "Unknown";
     };
 
     // Hàm lấy tên thể loại dựa trên ID
     const getGenreName = (genreId) => {
-        const foundGenre = genre.find((g) => g.id === genreId);
+        const foundGenre = genres.find((g) => g.id === genreId);
         return foundGenre ? `${foundGenre.name.first_name} ${foundGenre.name.last_name}`.trim() : "Unknown";
     };
 
@@ -49,6 +51,10 @@ export const MovieProvider = ({ children }) => {
                 setGenre,
                 getDirectorName, // Thêm hàm vào context
                 getGenreName,   // Thêm hàm vào context
+                directors,
+                setDirectors,
+                genres,
+                setGenres,
             }}
         >
             {children}
