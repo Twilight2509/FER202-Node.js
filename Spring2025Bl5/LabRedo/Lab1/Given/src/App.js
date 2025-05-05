@@ -1,26 +1,18 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MovieProvider from "./context/MovieContext";
-import MovieList from "./components/MovieList";
-import DirectorFilter from "./components/DirectorFilter";
-import GenreFilter from "./components/GenreFilter";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
-  return (
-    <MovieProvider>
-      <Container>
-        <Row>
-          <Col md={3}>
-            <DirectorFilter />
-            <GenreFilter />
-          </Col>
-          <Col md={9}>
-            <MovieList />
-          </Col>
-        </Row>
-      </Container>
-    </MovieProvider>
-  );
+    return (
+        <MovieProvider>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                </Routes>
+            </Router>
+        </MovieProvider>
+    );
 };
 
 export default App;

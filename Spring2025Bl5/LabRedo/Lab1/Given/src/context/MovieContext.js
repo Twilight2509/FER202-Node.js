@@ -25,6 +25,19 @@ export const MovieProvider = ({ children }) => {
         };
         fetchData();
     }, []);
+
+    // Hàm lấy tên đạo diễn dựa trên ID
+    const getDirectorName = (directorId) => {
+        const foundDirector = director.find((d) => d.id === directorId);
+        return foundDirector ? foundDirector.name : "Unknown";
+    };
+
+    // Hàm lấy tên thể loại dựa trên ID
+    const getGenreName = (genreId) => {
+        const foundGenre = genre.find((g) => g.id === genreId);
+        return foundGenre ? `${foundGenre.name.first_name} ${foundGenre.name.last_name}`.trim() : "Unknown";
+    };
+
     return (
         <MovieContext.Provider
             value={{
@@ -34,6 +47,8 @@ export const MovieProvider = ({ children }) => {
                 setDirector,
                 genre,
                 setGenre,
+                getDirectorName, // Thêm hàm vào context
+                getGenreName,   // Thêm hàm vào context
             }}
         >
             {children}

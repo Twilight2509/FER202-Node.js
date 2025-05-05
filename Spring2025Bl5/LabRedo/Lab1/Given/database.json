@@ -66,19 +66,38 @@
   "genres": [
     {
       "id": 1,
-      "name": "Science Fiction"
+      "name": {
+        "first_name": "Science",
+        "last_name": "Fiction"
+      }
     },
     {
       "id": 2,
-      "name": "Crime Drama"
+      "name": {
+        "first_name": "Crime",
+        "last_name": "Drama"
+      }
     },
     {
       "id": 3,
-      "name": "Thriller"
+      "name": {
+        "first_name": "Thriller",
+        "last_name": "Nomrmal"
+      }
     },
     {
       "id": 4,
-      "name": "Romance/Drama"
+      "name": {
+        "first_name": "Romance",
+        "last_name": "Drama"
+      }
+    },
+    {
+      "id": 5,
+      "name": {
+        "first_name": "Romance",
+        "last_name": "Drama"
+      }
     }
   ]
 }
